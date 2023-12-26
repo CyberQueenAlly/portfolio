@@ -1,0 +1,304 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Rock+Salt|Shadows+Into+Light|Cedarville+Cursive');
+
+body {
+  font-family: Nunito Sans, sans-serif;
+  color: #1e1f26;
+  text-align: center;
+  margin: 0;
+}
+
+p {
+  line-height: 2;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1e1f26; 
+  opacity:0.8;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+  
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #d0e1f9;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+  
+li a:hover {
+  background-color: #283655;
+  color: white;
+}
+
+.main-container {
+  background-color: #d0e1f9;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+.right {
+  position: absolute;
+  right: 300px;
+  top: 70px;
+}
+
+.left {
+  position: absolute;
+  left: 300px;
+  top: 360px;
+}
+
+.each-container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.header-p {
+  font-family: 'Shadows Into Light Two';
+  text-align: center;
+  font-size: 3rem;
+}
+
+.intro {
+  color:#d0e1f9;
+  text-align: center;
+  width: 30%;
+  margin: auto;
+  font-size: 1.2rem;
+}
+
+.parent {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 0.37fr 1fr;
+  grid-template-rows: repeat(0.37fr, 1fr);
+  width: 70%;
+  margin: 0 auto 0 auto;
+  text-align: left;
+  row-gap: 2rem;
+  column-gap: 2rem;
+}
+
+.title {
+  font-size: 1.8rem;
+  padding-right: 0px;
+}
+
+.text {
+  padding-left: 0px;
+}
+
+.image {
+  padding-right: 0px;
+  margin-right: 0px;
+}
+
+.foot-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color:#4D648D;
+  min-height: 50vh;
+}
+
+
+.p-skills-hobbies {
+  font-size: 1.2rem;
+}
+
+.link {
+	font-weight: bolder;
+  margin: 50px auto ;
+}
+
+#portfolio-collection {
+  display: inline-block;
+  color:#d0e1f9;
+}
+
+#resume-mobile {
+  display: none;
+	color: #283655;
+}
+
+#btn {
+  display: inline-block;
+  background: #d0e1f9;
+  background-image: linear-gradient(to bottom, #4D648D, #283655);
+  border-radius: 8px;
+  color: #d0e1f9;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 50px auto;
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#header1 {
+  font-family: 'Rock Salt', cursive;
+  text-align: center;
+  font-weight: bold;
+  font-size: 6rem;
+  margin-block-start: 0%;
+}
+
+#header2 {
+  font-family: 'Shadows Into Light Two', cursive;
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+#portfolio-flex {
+  display: flex;
+  column-gap: 20px;
+  row-gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  margin: 30px auto;
+
+}
+
+
+#hello {
+  color:#d0e1f9;
+}
+
+#skills {
+  margin-block-start: 0%;
+}
+
+#portfolio {
+  margin-block-start: 0%;
+  color: #d0e1f9;
+}
+
+#get-in-touch {
+  margin-block-start: 0%;
+}
+
+#title-container {
+  background-color: #d0e1f9;
+}
+
+#profile-container {
+  background-color: #4D648D;
+}
+
+#skills-container {
+  background-color: #d0e1f9;
+}
+
+#portfolio-container {
+  background-color: #283655;
+}
+
+#get-in-touch-container {
+  background-color: #d0e1f9; 
+}
+
+#copyright {
+  color:#d0e1f9;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#dumplings {
+  text-align: center;
+  width: 40%;
+  margin: auto;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 590px) {
+  ul {
+    display: none;
+    }
+  .right {
+    top: 20.5px;
+    }
+    
+  .left {
+    top: 310.5px;
+    }
+	#resume-mobile {
+		display: inline-block;
+		margin-top: 0px;
+	}
+}
+
+@media screen and (max-width: 414px) {
+  .parent {
+		grid-template-columns: 1fr;
+		grid-auto-flow: dense;
+	}
+
+	.intro {
+    width: 65%;
+  }  
+
+  #skills {
+		margin-left: 10px;
+		margin-right: 10px; 
+ }
+
+  #get-in-touch {
+    margin-right: 10px;
+    margin-right: 10px;
+  }
+
+  #dumplings {
+    width: 65%;
+	}
+}
+
+@media screen and (max-width: 360px) {
+  .right {
+		display: none;
+  }
+	
+	.left {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 280px) {
+	.center {
+		width: 80%;
+		height: 80%;
+  }
+
+  .header-p {
+    font-size: 2.5rem;
+  }
+
+  #portfolio-collection-link{
+		text-align: center;
+    font-size: smaller;
+  }
+
+  #header1 {
+		font-size: 5rem;
+  }
+
+  #header2 {
+		font-size: 2rem;
+	}
+}
